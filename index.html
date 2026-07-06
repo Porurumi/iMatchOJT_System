@@ -3,187 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iMatchOJT Dashboard</title>
+    <title>iMatchOJT</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homepage/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-<div class="container">
+<header>
+    <div class="logo">
+        <h2><span>iMatch</span>OJT</h2>
+        <small>AI Powered OJT Placement and Monitoring System</small>
+    </div>
 
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
+    <nav>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">How It Works</a>
+        <a href="#">Contact</a>
+    </nav>
 
-        <div class="sidebar-header">
+    <button class="login-btn">
+        <i class="fa-regular fa-user"></i> Login
+    </button>
+</header>
 
-            <div class="logo">
 
-                <div class="avatar">
-                    👤
-                </div>
+<section class="hero">
 
-                <div class="logo-text">
-                    <h2>iMatch<span>OJT</span></h2>
-                    <p>An Internship Placement and Monitoring System</p>
-                </div>
+    <div class="left">
 
+        <span class="campus">
+            ⭐ Proudly for PUP Sta. Rosa Campus
+        </span>
+
+        <h1>
+            Smarter Matching.
+            <span>Better Opportunities.</span>
+        </h1>
+
+        <div class="line"></div>
+
+        <p>
+            iMatchOJT uses AI to connect students with the right internship
+            opportunities and streamline OJT monitoring for a more efficient
+            experience.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <i class="fa-solid fa-brain"></i>
+                <span>AI Matching</span>
             </div>
 
-            <button id="menuBtn">
-                ☰
-            </button>
+            <div class="feature">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Realtime Monitoring</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-regular fa-file-lines"></i>
+                <span>Compliance</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-shield"></i>
+                <span>Secure</span>
+            </div>
 
         </div>
 
-        <nav>
+        <img src="images/pup-building.png" class="building">
 
-            <a href="#" class="active">
-                <span class="icon">🏠</span>
-                <span class="text">Dashboard</span>
-            </a>
+    </div>
 
-            <a href="#">
-                <span class="icon">🔍</span>
-                <span class="text">Find Internships</span>
-            </a>
 
-            <a href="#">
-                <span class="icon">💼</span>
-                <span class="text">My Applications</span>
-            </a>
+    <div class="login-card">
 
-            <a href="#">
-                <span class="icon">📄</span>
-                <span class="text">Requirements</span>
-            </a>
+        <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+        </div>
 
-            <a href="#">
-                <span class="icon">📈</span>
-                <span class="text">OJT Progress</span>
-            </a>
+        <h2>Welcome Back!</h2>
+        <p>Log in to your account to continue.</p>
 
-            <a href="#">
-                <span class="icon">🔔</span>
-                <span class="text">Notifications</span>
-            </a>
+        <label>Email Address</label>
 
-            <a href="#">
-                <span class="icon">👤</span>
-                <span class="text">Profile</span>
-            </a>
+        <div class="input">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Enter your email">
+        </div>
 
-            <a href="#">
-                <span class="icon">⚙</span>
-                <span class="text">Settings</span>
-            </a>
+        <label>Password</label>
 
-        </nav>
+        <div class="input">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="Enter password">
+            <i class="fa-solid fa-eye toggle"></i>
+        </div>
 
-    </aside>
+        <div class="forgot">
+            <a href="#">Forgot password?</a>
+        </div>
 
-    <!-- Main -->
-    <main class="main">
+        <button class="main-login">Login</button>
 
-        <header class="topbar">
+        <div class="divider">OR</div>
 
-            <div class="search-box">
-                🔍
-                <input
-                    type="text"
-                    placeholder="Search internships, companies, or keywords..."
-                >
-            </div>
+        <button class="google">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+            Continue with Google
+        </button>
 
-            <div class="top-right">
+        <p class="register">
+            Don't have an account?
+            <a href="#">Register here</a>
+        </p>
 
-                <div class="notification">
-                    🔔
-                    <span>4</span>
-                </div>
+    </div>
 
-                <div class="profile">
+</section>
 
-                    <div class="profile-pic">
-                        👤
-                    </div>
 
-                    <div>
+<section class="cards">
 
-                        <strong>Mark Aljapora</strong>
-
-                        <small>BSIT 3-2</small>
-
-                    </div>
-
-                    ▼
-
-                </div>
-
-            </div>
-
-        </header>
-
-        <section class="content">
-
-            <!-- Dashboard content goes here -->
-
-        </section>
-
-    </main>
-
+<div class="card">
+<i class="fa-solid fa-graduation-cap"></i>
+<h3>For Students</h3>
+<p>Discover internship opportunities.</p>
 </div>
+
+<div class="card">
+<i class="fa-solid fa-briefcase"></i>
+<h3>For Companies</h3>
+<p>Find talented interns.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-users"></i>
+<h3>Faculty Members</h3>
+<p>Monitor student progress.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-shield"></i>
+<h3>Faculty Heads</h3>
+<p>Generate reports.</p>
+</div>
+
+</section>
+
 
 <footer>
 
-    <div class="footer-left">
+<div>
+<strong>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</strong>
+<br>
+Sta. Rosa Campus
+</div>
 
-        <div class="seal">
-            🎓
-        </div>
+<div>
+©2024 iMatchOJT
+</div>
 
-        <div>
-
-            <strong>
-                POLYTECHNIC UNIVERSITY OF THE PHILIPPINES
-            </strong>
-
-            <small>
-                Santa Rosa Campus
-            </small>
-
-        </div>
-
-    </div>
-
-    <div class="footer-center">
-
-        ©2024 iMatchOJT. All Rights Reserved.
-
-    </div>
-
-    <div class="footer-links">
-
-        <a href="#">Privacy Policy</a>
-
-        <a href="#">Terms of Service</a>
-
-        <a href="#">Help Center</a>
-
-        <div class="socials">
-
-            <span>Ⓕ</span>
-
-            <span>✉</span>
-
-            <span>🌐</span>
-
-        </div>
-
-    </div>
+<div class="social">
+<i class="fab fa-facebook-f"></i>
+<i class="far fa-envelope"></i>
+<i class="fas fa-globe"></i>
+</div>
 
 </footer>
 
-<script src="script.js"></script>
+<script src="js/homepage/script.js"></script>
 
 </body>
 </html>
