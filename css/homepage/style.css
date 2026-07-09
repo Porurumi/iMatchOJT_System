@@ -8,6 +8,11 @@ font-family:Poppins,sans-serif;
 body{
 background:#fafafa;
 color:#222;
+background-image: url("../../images/uFZMJSn.jpeg");
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 header{
@@ -32,6 +37,7 @@ color:#d6001c;
 nav{
 display:flex;
 gap:35px;
+padding-left: 450px;
 }
 
 nav a{
