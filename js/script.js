@@ -64,16 +64,37 @@ searchInput.addEventListener("keyup", function () {
 });
 
 // =========================
-// PROFILE MENU
+// PROFILE DROPDOWN
 // =========================
 
-const profile = document.querySelector(".profile");
+const profileBtn = document.getElementById("profileBtn");
+const dropdownMenu = document.getElementById("dropdownMenu");
+const arrow = document.getElementById("arrow");
 
-profile.addEventListener("click", function () {
+if (profileBtn && dropdownMenu && arrow) {
 
-    alert("Profile menu coming soon.");
+    profileBtn.addEventListener("click", function (e) {
 
-});
+        e.stopPropagation();
+
+        dropdownMenu.classList.toggle("show");
+
+        if (dropdownMenu.classList.contains("show")) {
+            arrow.textContent = "▲";
+        } else {
+            arrow.textContent = "▼";
+        }
+
+    });
+
+    document.addEventListener("click", function () {
+
+        dropdownMenu.classList.remove("show");
+        arrow.textContent = "▼";
+
+    });
+
+}
 
 // =========================
 // NOTIFICATION
@@ -81,13 +102,26 @@ profile.addEventListener("click", function () {
 
 const notification = document.querySelector(".notification");
 
-notification.addEventListener("click", function () {
+if (notification) {
 
-    alert("You have 4 new notifications.");
+    notification.addEventListener("click", function () {
 
-});
+        alert("You have 4 new notifications.");
 
+    });
 
-document.getElementById("loginBtn").addEventListener("click", function () {
-    window.location.href = "login.html";
-});
+}
+
+// =========================
+// LOGIN BUTTON
+// =========================
+
+const loginBtn = document.getElementById("loginBtn");
+
+if (loginBtn) {
+
+    loginBtn.addEventListener("click", function () {
+        window.location.href = "login.html";
+    });
+
+}

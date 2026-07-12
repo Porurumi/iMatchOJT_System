@@ -429,6 +429,95 @@ nav a.active{
 
 }
 
+/* Profile Dropdown */
+
+.profile-dropdown{
+    position:relative;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    cursor:pointer;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.profile:hover{
+    background:#f3f3f3;
+}
+
+.profile-pic{
+    width:45px;
+    height:45px;
+    background:#ddd;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.profile-info small{
+    display:block;
+    color:#777;
+}
+
+#arrow{
+    font-size:14px;
+    transition:.3s;
+}
+
+/* Dropdown */
+
+.dropdown-menu{
+
+    position:absolute;
+
+    top:110%;
+
+    right:0;
+
+    width:170px;
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    display:none;
+
+    overflow:hidden;
+
+    z-index:1000;
+
+}
+
+.dropdown-menu.show{
+    display:block;
+}
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:12px 15px;
+
+    color:#333;
+
+    text-decoration:none;
+
+}
+
+.dropdown-menu a:hover{
+    background:#f5f5f5;
+}
+
 /* =========================
    CONTENT
 ========================= */
